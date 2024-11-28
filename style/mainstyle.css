@@ -1,0 +1,123 @@
+/*Below declares variables, this makes it easyer to change if we change our minds*/
+:root{
+    --background: #fcfbfa;
+    --text: #18160f;
+    --accent: #9e9065;
+    --links: #8791b4;
+    --other: #a8c5c9;
+}
+
+/*Below makes the scrollbar look fancy*/
+
+*{
+    scrollbar-color: var(--accent) var(--background);
+    scrollbar-width: thin;
+}
+
+/*Below changes the overall attributes of the website*/
+
+html, body{
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Below makes the body flex, allows us to center the class "container"*/
+
+body{
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Below changes the desing of all links on the website*/
+
+a{
+    color: var(--links);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Below changes the desing of all images on the website*/
+img{
+    max-width: 100%; /*sets the width of the image, so they dont look too big*/
+}
+
+/*Classes: 
+We can name elements and give them special properties even if their desing on the whole website is different. 
+Also used to structure the website.*/
+
+.container{
+    width: 50%;
+}
+
+.title{
+    font-size: 7vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: var(--accent);
+}
+
+.main{
+    min-height: 70vh;
+}
+
+/*IDs: 
+Needed for the javascrip to work otherwise i would use classes here too*/
+
+#nav{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+#nav > a{
+    border-bottom: 1px solid var(--accent);
+    margin: 1px;
+    padding: 4px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+#nav > a:hover{
+    border-bottom: none;
+    background-color: var(--links);
+    color: var(--background);
+}
+
+#footer{
+    border-top: 2px var(--accent) solid ;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#footer > a{
+    padding-right: 3%;
+}
+
+/*Media Queries: 
+Responive desing.
+With them we can make it more accessible on mobile devices.*/
+
+@media screen and (max-width: 1024px) { /*Why so weird numbers? --> Breakpoints where size of the tablet's display becomes monitor sized*/
+    .container{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 99%;
+    }
+
+    .title{
+        font-size: 10vw;
+    }
+}
