@@ -57,7 +57,7 @@ Also used to structure the website.*/
 }
 
 .title{
-    font-size: 7vw;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: var(--accent);
