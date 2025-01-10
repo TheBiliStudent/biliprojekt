@@ -1,5 +1,5 @@
 let navHTML = 
-'<a href="/index.html">Intro Page</a>' +
+'<a href="/index.html">🏠</a>' +
 '<a href="/transformation.html">Transformation Therory</a>' +
 '<a href="/transformationgermany.html">Germanys transformation after WW2</a>' ;
 
