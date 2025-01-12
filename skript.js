@@ -1,7 +1,7 @@
 let navHTML = 
 '<a href="index.html">⌂</a>' +
 '<a href="transformation.html">Transformation Theory</a>' +
-'<a href="transformationgermany.html">Germanys transformation after WW2</a>'
+'<a href="transformationgermany.html">Germanys transformation after WW2</a>' +
 '<a href="sounds_of_change.html">Sounds Of Change</a>'  ;
 
 if (document.getElementById("nav")) {
