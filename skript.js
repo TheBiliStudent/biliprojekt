@@ -11,7 +11,7 @@ if (document.getElementById("nav")) {
 }
 
 let footerHTML = 
-'<a href="credits.html">sources?</a>' +
+'<a href="credits.html">sources</a>' +
 '<a href="sourcecode.html">a look into the Source code</a>';
 
 if (document.getElementById("footer")) {
