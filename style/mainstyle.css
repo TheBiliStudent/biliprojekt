@@ -3,7 +3,7 @@
     --background: #fcfbfa;
     --text: #18160f;
     --accent: #9e9065;
-    --links: #8791b4;
+    --links: #4f5a80;
     --other: #a8c5c9;
 }
 
@@ -20,6 +20,7 @@ html, body{
     background-color: var(--background);
     color: var(--text);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
 }
 
 /*Below makes the body flex, allows us to center the class "container"*/
@@ -36,7 +37,6 @@ body{
 
 a{
     color: var(--links);
-    text-decoration: none;
 }
 
 a:hover{
