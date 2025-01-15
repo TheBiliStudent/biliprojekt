@@ -43,9 +43,19 @@ a:hover{
     text-decoration: underline;
 }
 
+a::after{
+    content: " 🠔";
+}
+
+/*Below styles the lists on the website*/
+
+li{
+    list-style-type: none;
+}
+
 /*Below changes the desing of all images on the website*/
 img{
-    max-width: 100%; /*sets the width of the image, so they dont look too big*/
+    width: 100%; /*sets the width of the image, so they dont look too big*/
 }
 
 /*Classes: 
@@ -67,6 +77,12 @@ Also used to structure the website.*/
     min-height: 70vh;
 }
 
+.float{
+    float: right; 
+    width: 30%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
 /*IDs: 
 Needed for the javascrip to work otherwise i would use classes here too*/
 
@@ -101,6 +117,11 @@ Needed for the javascrip to work otherwise i would use classes here too*/
 #footer > a{
     padding-right: 3%;
 }
+
+#nav > a::after, #footer > a::after{
+    content: none;
+}
+
 
 /*Media Queries: 
 Responive desing.
